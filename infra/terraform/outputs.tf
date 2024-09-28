@@ -47,12 +47,6 @@ output "aws_cloudwatch_log_group_aws_lambda_hello_kitty_function_name" {
 }
 
 
-output "aws_lambda_hello_kitty_raghav_reddy_function_arn" {
-  value = module.appcd_00a20b0a-2ec0-5bdc-a08d-65a85dc81d5b.function_arn
-  sensitive = false
-}
-
-
 output "aws_lambda_hello_kitty_raghav_reddy_function_name" {
   value = module.appcd_00a20b0a-2ec0-5bdc-a08d-65a85dc81d5b.function_name
   sensitive = false
@@ -67,5 +61,11 @@ output "aws_lambda_hello_kitty_raghav_reddy_function_url" {
 
 output "aws_lambda_hello_kitty_raghav_reddy_invoke_arn" {
   value = module.appcd_00a20b0a-2ec0-5bdc-a08d-65a85dc81d5b.invoke_arn
+  sensitive = false
+}
+
+
+output "aws_lambda_hello_kitty_raghav_reddy_function_arn" {
+  value = module.appcd_00a20b0a-2ec0-5bdc-a08d-65a85dc81d5b.function_arn
   sensitive = false
 }
